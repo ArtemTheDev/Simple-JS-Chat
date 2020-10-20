@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Simple JS Chat</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body onload="">
+        <div class="header">
+            <div class="name">ЧАТ</div>
+            <i class="fas fa-user" id="user_icon">
+                <span id="user_id_span">1</span>
+            </i>
+        </div>
+
+
+        <div id="main"></div>
+
+
+        <div class="Input_message">
+            <div class="objects">
+                <textarea rows="1" class="message_text" id="text" oninput="resize()" 
+                placeholder="Введите сообщение"></textarea>
+                <i class="fas fa-caret-right Send_button" id="Send_button"></i>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/messages.js"></script>
+</html>

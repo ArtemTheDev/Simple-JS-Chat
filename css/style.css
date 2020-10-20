@@ -1,0 +1,141 @@
+@import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+body {
+    margin:0;
+    background-color:#eaeaea;
+}
+
+.header {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: #c1c1c1;
+    box-shadow: 0 0 9px #404040;
+    display: flex;
+    justify-content: center;
+
+    
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.header .name {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#user_icon {
+    margin-left:20px;
+    font-size: 30px;
+    align-self: center;
+    color: #dedede; 
+}
+
+#user_icon:hover {
+    cursor: pointer;
+}
+
+.Input_message {
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #e4e4e4;
+    border-top: 1px solid #b3b3b3;
+}
+
+.Input_message .objects {
+    padding: 10px 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.message_text {
+    width: 70%;
+    font-size: 20px;
+    outline:none;
+    border: 2px solid #b3b3b3;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    max-height:148px;
+    resize: none;
+}
+
+.message_text:focus {
+    border: 2px solid #8e8e8e;
+    transition: 0.3s;
+}
+
+.Input_message .Send_button {
+    color:#5a5a5a;
+    font-size: 50px;
+    margin-left: 10px;
+    align-self: flex-end;
+}
+
+.Input_message .Send_button:hover {
+    cursor: pointer;
+}
+
+#main {
+    width:95%;
+    margin: 100px auto 100px auto;
+}
+
+
+
+
+
+
+.message_block {
+    background-color: #cacaca;
+    width: fit-content;
+    max-width: 70%;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 25px 0px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+    line-break: auto;
+    hyphens: manual;
+}
+
+.message_block .username {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    height:500px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track-piece  {
+    background-color: #eeeeee;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background-color: #5a5a5a;
+    border: 1px solid #eee;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+}
